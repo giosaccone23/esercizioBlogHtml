@@ -1,0 +1,169 @@
+<html>
+    
+    <head>
+	    <meta charset="utf-8">
+	    <title> Sviluppo di una pagina web - Blog Epicode</title>
+	    <meta name="description" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
+        <link rel="stylesheet" href="styleB.css" >
+    </head>       
+    <body>
+        <header>
+            <table width="100%" border="0">
+                <tr> <!--Inserisci Span-->
+                    <td width="40%" align="center"><img src="assets/img/logo.svg" width="200"></td>
+                    <span id="uno"><td width="20%" align="center"><a href="Blog.html"><font face="Helvetica" color="white">ARTICOLI</font></a></td></span>
+                    <td width="20%" align="center"><a href="Blog.html"><font face="Helvetica" color="white">HOME</font></a></td>
+                    <td width="20%" align="center"><a href="Blog.html"><font face="Helvetica" color="white">JOB</font></a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+
+        <main>
+            <section id="TIT" align="center">
+                <h1><strong>COME CREARE UN TEMPLATE PER I POST</strong></h1>
+                <h6><font face="helvetica">Di Mario Rossi- pubblicato il 25-10-2020</font></h6>
+            </section>
+            
+            <section id="intestazione">
+                <h4><font face="helvetica">La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</font></h4>
+            </section>
+
+            <section id="elenchi">
+                <table width="100%" border="0">
+                    <tr>
+                        <td width="50%">
+                        <section id="#elenco1">
+                            <font face="helvetica" align="center"><h4>Le varie aree saranno quindi suddivise in:</h4></font>
+                                <ol>
+                                    <li> <font face="helvetica">Contenuti di intestazione del tag &lt;header&gt;</font></li>
+                                    <li> <font face="helvetica">Contenuti centrali variabili del tag &lt;main&gt;(corpo principale)</font></li>
+                                    <li> <font face="helvetica">Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</font></li>
+                                    <li> <font face="helvetica">Formattazione del codice</font></li>
+                                </ol>       
+                        </section>
+                        </td>
+                    
+                        <td width="50%">
+                        <section id="#elenco2">
+                            <font face="helvetica" align="center"><h4>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. <br>Perciò i passi saranno:</h4></font>
+                            <ol>
+                                <li><font face="helvetica">Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</font></li>
+                                <li><font face="helvetica">Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</font></li>
+                                <li><font face="helvetica">Applicare gli stili CSS</font></li>
+                                <li><font face="helvetica">L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</font></li>
+                            </ol>       
+                    </section>
+                    </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="#tabell">
+                <table width="100%" align="center" border="1" id="tab1">
+                    <caption><h4>Diffusione dei CSS</h4></caption>
+                    <thead>
+                        <tr id="riga1">
+                            <th width="33.5%">Anno</th>
+                            <th width="33%">% di utilizzo</th>
+                            <th width="33.5%">Supporto browsers</th>
+                        </tr>
+                    </thead>
+                    <tr id="riga2"> 
+                        <td align="center">2000</td>
+                        <td align="center">20%</td>
+                        <td align="center">17%</td>
+                    </tr>
+                    <tr id="riga3">
+                        <td align="center">2002</td>
+                        <td align="center">35%</td>
+                        <td align="center">22%</td>
+                    </tr>
+                    <tr id="riga4">
+                        <td align="center">2004</td>
+                        <td align="center">45%</td>
+                        <td align="center">42%</td>
+                    </tr>
+                    <tr id="riga5">
+                        <td align="center">2008</td>
+                        <td align="center">80%</td>
+                        <td align="center">51%</td>
+                    </tr>
+                    <tr id="riga6">
+                        <td align="center">2012</td>
+                        <td align="center">100%</td>
+                        <td align="center">76%</td>
+                    </tr>  
+                </table>
+            </section>
+        <br>
+        <br>
+            <section id="testoYT">
+               <h4><font face="helvetica">Un test di validazione potrà essere fatto tramite <a href="https://code.org/"> il tool online di verifica</a> dedicato allo scopo.Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</font></h4>
+               <div align="center"><iframe width="50%" height="500px"src="https://www.youtube.com/embed/TxcJ2drr554?si=MrKGoKBnE3TSdROU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>    
+            </section>
+        <br>
+        <br>    
+            <section id="newsletter">
+                <span align="center" id><h4><font face="helvetica">Vuoi rimanere aggiornato su altre novità del blog?  Iscriviti alla nostra newsletter:</font></h4></span>
+                <form method="get" action="cod.php" autocomplete="off" align="center">
+                    <label for="name"><font face="helvetica" >Nome</font></label>                          <br>
+                    <input type="text" id="name">                           <br>
+                <br>
+                    <label for="surname"><font face="helvetica">Cognome</font></label>                    <br>
+                    <input type="text" id="surname">                        <br>
+                <br>                
+                    <label for="giornoNascita"><font face="helvetica">Data di nascita</font></label>     <br>
+                    <input type="date" id="dataNascita">                    <br>
+                <br>
+                    <label for="eMail"><font face="helvetica">Inserisci mail</font></label>               <br>
+                    <input type="text" id="email" >                         <br>
+                <br>
+                    <button type="submit"><font face="helvetica">INVIO</font></button>
+                </form>
+            </section>
+        <br>
+        <br>
+            <section id="correlati">
+                <table width="100%" id="correlat" border="0">
+                    <caption><h4><font face="helvetica">ARTICOLI CORRELATI</font></h4></caption>
+                    <thead>
+                        <tr>   
+                                <th width="33.5%">TITOLO</th>
+                                <th width="33%">CATEGORIA</th>
+                                <th width="33.5%">DATA</th>
+                        </tr>
+                    </thead>    
+                    <tr>
+                        <td align="center"><a href="articolo.html"><font face="helvetica">Validare il codice HTML</font></a></td>
+                        <td align="center"><font face="helvetica">DEVELOP</font></td>
+                        <td align="center"><font face="helvetica">18-09-2020</font></td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center"><a href="articolo1.html"><font face="helvetica">Correggere la sintassi</font></a></td>
+                        <td align="center"><font face="helvetica">DEVELOP</font></td>
+                        <td align="center"><font face="helvetica">16-09-2020</font></td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="center"><a href="articolo2.html"><font face="helvetica">Meno KB nella pagina</font></a></td>
+                        <td align="center"><font face="helvetica">OTTIMIZZAZIONE</font></td>
+                        <td align="center"><font face="helvetica">30-09-2020</font></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <hr>
+        <footer>
+          <table id="foot" width="80%" border="0" align="center">  
+            <tr>
+                <td align="center" width="40%">Testata online di Mario Rossi, registrata con prot. n.213/2018<br>P.IVA 00112233. <br> <a href="mariorossi@gmail.com"> mariorossi@gmail.com</td>
+                <td align="center" width="40%">
+                    <font face="helvetica">Via Luigi Einaudi 2-Milano <br></font> <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.4481349878097!2d9.270782976705352!3d45.52118682963405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c7f34a3a2069%3A0x1062feebaac2a5dc!2sVia%20Luigi%20Einaudi%2C%2020093%20Cologno%20Monzese%20MI!5e0!3m2!1sit!2sit!4v1710004998110!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+            </tr>
+          </table>
+        </footer>
+    </body>   
+        </html>
